@@ -1,0 +1,22 @@
+{
+  "short_name": "DEI",
+  "name": "INTERCULTURAL",
+  "description": "Departamento de Educación Intercultural",
+  "icons": [
+    {
+      "src": "/images/int192.webp",
+      "type": "image/webp",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/int512.webp",
+      "type": "image/webp",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#005577"
+}
