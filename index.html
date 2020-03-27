@@ -371,6 +371,13 @@
                 evt.currentTarget.firstElementChild.className += " w3-border-blue";
             }
         </script>
+    <script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('worker.js?'+Math.random()+'')
+  });
+}
+</script>
 </body>
 
 </html>
