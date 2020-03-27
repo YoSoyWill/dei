@@ -2,7 +2,7 @@
   "name": "Intercultural",
   "short_name": "DEI",
   "description": "Departamento de Educación Intercultural",
-  "start_url": "/",
+  "start_url": "https://yosoywill.github.io/dei/index.html",
   "display": "standalone",
   "theme_color": "#005577",
   "background_color": "#ffffff",
