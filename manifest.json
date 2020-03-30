@@ -8,13 +8,13 @@
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "int192.webp",
-      "type": "image/webp",
+      "src": "int192.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "int512.webp",
-      "type": "image/webp",
+      "src": "int512.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ]
