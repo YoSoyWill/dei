@@ -4,11 +4,8 @@ if (self.skipWaiting) { self.skipWaiting(); }
   event.waitUntil(
     caches.open('cache01').then(function(cache) {
       return cache.addAll([
-  '/dei',
-'index.html',
-  'faq.html',
-  'experiencias.html',
-  '../css/w3.css',
+  'https://yosoywill.github.io/dei/index.html',
+  'https://yosoywill.github.io/dei/css/w3.css',
       ]);
     })
   );
