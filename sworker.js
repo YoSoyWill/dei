@@ -5,6 +5,8 @@ if (self.skipWaiting) { self.skipWaiting(); }
     caches.open('cache01').then(function(cache) {
       return cache.addAll([
   'https://yosoywill.github.io/dei/index.html',
+  'https://yosoywill.github.io/dei/faq.html',
+  'https://yosoywill.github.io/dei/experiencias.html',	      
   'https://yosoywill.github.io/dei/css/w3.css',
       ]);
     })
