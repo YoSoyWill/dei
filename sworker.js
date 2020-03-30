@@ -2,7 +2,7 @@ self.addEventListener('install', function(event) {
 // Instalar de inmediato
 if (self.skipWaiting) { self.skipWaiting(); }
   event.waitUntil(
-    caches.open('cache01').then(function(cache) {
+    caches.open('cache02').then(function(cache) {
       return cache.addAll([
   'https://yosoywill.github.io/dei/index.html',
   'https://yosoywill.github.io/dei/faq.html',
@@ -21,7 +21,7 @@ self.addEventListener('fetch', function(event) {
   );
 });
  // Elimina archivos de cache viejos
-  var cacheWhitelist = ['cache01'];
+  var cacheWhitelist = ['cache02'];
     caches.keys().then(function(cacheNames) {
       return Promise.all(
         cacheNames.map(function(cacheName) {
