@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" manifest="manifiesto.manifest">
 <title>INTERCULTURAL</title>
 <meta charset="UTF-8">
 <meta name="title" content="INTERCULTURAL">
@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="INTERCULTURAL" />
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
 <style>
     html,
@@ -43,21 +43,22 @@
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar">
         <br>
-        <h3 class="w3-padding-64 w3-center"><span class="w3-padding w3-red w3-opacity-min"><b>INTER</b></span> CULTURAL</h3>
+        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button"><h3 class="w3-padding-64 w3-center"><span class="w3-padding w3-red w3-opacity-min"><b>INTER</b></span> CULTURAL</h3></a>
         <a href="index.html#sobre" onclick="w3_close()" class="w3-bar-item w3-button">SOBRE</a>
         <a href="index.html#conceptos" onclick="w3_close()" class="w3-bar-item w3-button">CONCEPTOS</a>
         <a href="index.html#herramientas" onclick="w3_close()" class="w3-bar-item w3-button">HERRRAMIENTAS</a>
         <a href="index.html#poblaciones" onclick="w3_close()" class="w3-bar-item w3-button">POBLACIONES</a>
         <a href="index.html#implementacion" onclick="w3_close()" class="w3-bar-item w3-button">IMPLEMENTACIÓN</a>
         <a href="faq.html" onclick="w3_close()" class="w3-bar-item w3-button">PREGUNTAS FRECUENTES</a>
-        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCIAS FRECUENTES</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCIAS EXITOSAS</a>
         <a href="index.html#contacto" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
 
     </nav>
 
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-        <span class="w3-left w3-padding"><span class="w3-padding w3-red w3-opacity-min"><b>INTER</b></span> CULTURAL</span>
+
+        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button"><span class="w3-left"><span class="w3-padding w3-red w3-opacity-min"><b>INTER</b></span> CULTURAL</span></a>
         <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
 
     </header>
@@ -71,30 +72,42 @@
         <!-- PANTALLAS PEQUEÑAS -->
         <div class="w3-hide-large" style="margin-top:83px"></div>
 
-
         <div class="w3-container w3-padding-32" id="sobre">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">EXPERIENCIAS EXITOSAS </h3>
-              <div class="w3-card-4" style="width:100%">
-    <header class="w3-container w3-blue">
-      <h4>Nombre de la experiencia</h4>
-    </header>
-    <div class="w3-container">
-      <p>por: Nombre del autor</p>
+            <div class="w3-card-4" style="width:100%">
+                <header class="w3-container w3-blue">
+                    <h4>Nombre de la experiencia</h4>
+                </header>
+                <div class="w3-container">
+                    <p>por: Nombre del autor</p>
 
-      <hr>
-      
-      <p>Resumen de la experiencia exitosa que indique la población atendida y beneficios de la misma</p>
-      <br>
-    </div>
-    <button class="w3-button w3-block w3-light-blue">Link para descargar la experiencia completa</button>
-  </div>
+                    <hr>
+
+                    <p>Resumen de la experiencia exitosa que indique la población atendida y beneficios de la misma</p>
+                    <br>
+                </div>
+                <button class="w3-button w3-block w3-light-blue">Link para descargar la experiencia completa</button>
+            </div>
 
         </div>
         <!-- Footer -->
-        <footer class="w3-center w3-gray w3-padding-16">
-            <p>Hecho por el Departamento de Educación Intercultural del MEP con W3.css</p>
+        <footer class="w3-center w3-sand w3-padding-16">
+            <button onclick="document.getElementById('creditos').style.display='block'" class="w3-button w3-center w3-block">créditos</button>
+
+            <div id="creditos" class="w3-modal">
+                <div class="w3-modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('creditos').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <h4 class="w3-text-blue">Departamento de Educación Intercultural del MEP</h4>
+                        <p><strong>Elaborado por: William Padilla Amador</strong></p>
+                        <p><strong>Revisado por: Víctor Pineda Rodríguez</strong></p>
+                        <p><strong>Supervisado y aprobado por: José Estrada Torres</strong></p>
+                        <p>framework CSS: W3.CSS</p>
+                    </div>
+                </div>
+            </div>
         </footer>
-                <script>
+        <script>
             // Script to open and close sidebar
             function w3_open() {
                 document.getElementById("mySidebar").style.display = "block";
@@ -111,6 +124,7 @@
                 document.getElementById("modal01").style.display = "block";
             }
         </script>
+
 </body>
 
 </html>
