@@ -52,6 +52,7 @@
         <a href="index.html#implementacion" onclick="w3_close()" class="w3-bar-item w3-button">IMPLEMENTACIÓN</a>
         <a href="faq.html" onclick="w3_close()" class="w3-bar-item w3-button">PREGUNTAS FRECUENTES</a>
         <a href="experiencias.html" onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCIAS EXITOSAS</a>
+        <a href="bibliografia.html" onclick="w3_close()" class="w3-bar-item w3-button">APOYO BIBLIOGRÁFICO</a>
         <a href="index.html#contacto" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
 
     </nav>
@@ -139,7 +140,7 @@ es la imagen que cada uno tiene de sí mismo y de las demás personas. Implica r
         <div class="w3-container w3-padding-32" id="herramientas">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">HERRAMIENTAS</h3>
             <div class="w3-container">
-                <button onclick="myFunction('herramienta1')" class="w3-button w3-block w3- w3-bottombar  w3-border-blue w3-left-align">Contextualización y pertinencia cultural</button>
+                <button onclick="DespHerramientas('herramienta1')" class="w3-button w3-block  w3-bottombar w3-border-blue w3-left-align">Contextualización y pertinencia cultural</button>
                 <div id="herramienta1" class="w3-hide w3-container">
                     <p>La contextualización curricular y la pertinencia cultural son dos herramientas pedagógicas del enfoque de educación intercultural que dan sentido y significancia a los procesos educativos en cada comunidad con base en su condición de diversidad sociocultural.</p>
                     <p><strong>Contextualización curricular</strong> Se define como la recopilación, sistematización e integración de los elementos y experiencias vivenciales de las personas quienes conforman una comunidad estudiantil cualquiera. Estos elementos son incorporados como recursos didácticos en los distintos procesos educativos, con el objeto de favorecer los procesos de construcción del aprendizaje a partir del aprovechamiento de los contextos social, ambiental y cultural propios. </p>
@@ -147,16 +148,16 @@ es la imagen que cada uno tiene de sí mismo y de las demás personas. Implica r
                     <p><a href="http://www.mep.go.cr/sites/default/files/lineamientos-educ-intercultural.pdf#page=16" class="w3-bar-item w3-block w3-button w3-sand">Saber más</a></p>
                 </div>
 
-                <button onclick="myFunction('herramienta2')" class="w3-button w3-block w3- w3-bottombar  w3-border-blue w3-left-align">Revitalización histórica</button>
+                <button onclick="DespHerramientas('herramienta2')" class="w3-button w3-block w3- w3-bottombar  w3-border-blue w3-left-align">Revitalización histórica</button>
                 <div id="herramienta2" class="w3-hide w3-container">
                     <p>Es una herramienta para rescatar a los sucesos y sujetos históricos, que han sido excluidos de la historia oficial, salvando estos procesos individuales y sociales de una comunidad del olvido y buscando, en contraposición, su reconocimiento y exaltación, convirtiéndose en una necesidad de diferenciación para reconocer y apreciar los cimientos de la identidad regional. </p>
                     <p>Desde ese punto de vista, Rodríguez menciona que el proceso de formación de la identidad se produce porque cada individuo nace en una sociedad que posee una estructura social y cultural determinada, en la cual se transforma y se adapta mediante valores, normas e interpretaciones de esa realidad. Al relacionarse con los demás se aprende a autoidentificarse, a reconocer la propia identidad y aceptar la imagen de uno mismo.</p>
 
                     <p><a href="http://www.mep.go.cr/sites/default/files/lineamientos-educ-intercultural.pdf#page=18" class="w3-bar-item w3-block w3-button w3-sand">Saber más</a></p>
                 </div>
-                <button onclick="myFunction('herramienta3')" class="w3-button w3-block w3- w3-bottombar  w3-border-blue w3-left-align">Buenas prácticas</button>
+                <button onclick="DespHerramientas('herramienta3')" class="w3-button w3-block w3-bottombar w3-border-blue w3-left-align">Buenas prácticas</button>
                 <div id="herramienta3" class="w3-hide w3-container">
-                    <p>buenas prácticas regionales, en contextualización curricular, pertinencia cultural y revitalización de la memoria histórica a nivel regional que el MEP ha reconocido por sus esfuerzos en una identificación total de la comunidad así como por las producciones y herramientas didácticas que permiten generar un sentido de pertencia y arraigo</p>
+                    <p>Buenas prácticas regionales, en contextualización curricular, pertinencia cultural y revitalización de la memoria histórica a nivel regional que el MEP ha reconocido por sus esfuerzos en una identificación total de la comunidad así como por las producciones y herramientas didácticas que permiten generar un sentido de pertencia y arraigo</p>
 
                     <ul class="w3-ul w3-border">
                         <li>Concebir estas herramientas, más allá del simple activismo, como un ejercicio que debe permear permanentemente los procesos de planificación y mediación pedagógica. Precisamente, esta relación del ser humano con su cotidianeidad, su entorno, su contexto histórico, social y cultural es lo que da sentido al acto educativo, por lo que deberá estar tanto en las actividades curriculares y co-curriculares del centro educativo. </li>
@@ -294,9 +295,9 @@ o quien esta designe</span></p>
                 document.getElementById("modal01").style.display = "block";
             }
         </script>
-
+<!--desplegableherramientas-->
         <script>
-            function myFunction(id) {
+            function DespHerramientas(id) {
                 var x = document.getElementById(id);
                 if (x.className.indexOf("w3-show") == -1) {
                     x.className += " w3-show";
