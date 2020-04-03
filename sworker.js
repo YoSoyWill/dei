@@ -9,7 +9,6 @@ if (self.skipWaiting) { self.skipWaiting(); }
   'https://yosoywill.github.io/dei/experiencias.html'
   'https://yosoywill.github.io/dei/bibliografia.html',
   'https://yosoywill.github.io/dei/plantillasindigenas.html',
-  'https://yosoywill.github.io/dei/404.html',
   'https://yosoywill.github.io/dei/css/w3.css',
       ]);
     })
