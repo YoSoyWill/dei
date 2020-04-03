@@ -2,13 +2,14 @@ self.addEventListener('install', function(event) {
 // Instalar de inmediato
 if (self.skipWaiting) { self.skipWaiting(); }
   event.waitUntil(
-    caches.open('cache1.5').then(function(cache) {
+    caches.open('cache1.6').then(function(cache) {
       return cache.addAll([
   'https://yosoywill.github.io/dei/index.html',
   'https://yosoywill.github.io/dei/faq.html',
   'https://yosoywill.github.io/dei/experiencias.html'
   'https://yosoywill.github.io/dei/bibliografia.html',
   'https://yosoywill.github.io/dei/plantillasindigenas.html',
+  'https://yosoywill.github.io/dei/404.html',
   'https://yosoywill.github.io/dei/css/w3.css',
       ]);
     })
@@ -23,7 +24,7 @@ self.addEventListener('fetch', function(event) {
   );
 });
  // Elimina archivos de cache viejos
-  var cacheWhitelist = ['cache1.5'];
+  var cacheWhitelist = ['cache1.6'];
     caches.keys().then(function(cacheNames) {
       return Promise.all(
         cacheNames.map(function(cacheName) {
